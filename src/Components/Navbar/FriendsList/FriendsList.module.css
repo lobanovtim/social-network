@@ -1,0 +1,35 @@
+.myFriends {
+    margin: 0 auto;
+  }
+
+  .myFriends__title {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+  
+  .myFriends__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0;
+  }
+  
+  .myFriends__item {
+    margin: 0 auto;
+    list-style: none;
+    margin: 10px;
+  }
+
+  .myFriends__avatar {
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .myFriends__link {
+    color: white;
+    text-decoration: none;
+  }

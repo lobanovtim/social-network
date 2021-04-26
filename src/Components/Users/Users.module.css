@@ -1,0 +1,26 @@
+.user__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.user__img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: grey;
+}
+
+.paginationList span {
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.paginationList_item {
+    font-size: 0.8em;
+}
+
+.selectedPage {
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding-right: 5px;
+}

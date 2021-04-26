@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: green;
+}
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.loginBlock {
+  margin-left: auto;
+}

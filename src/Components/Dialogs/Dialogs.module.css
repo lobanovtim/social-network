@@ -1,0 +1,31 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto
+}
+
+.dialog {
+  font-size: 20px;
+  padding: 20px 10px;
+}
+
+.entryFeild__wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 auto;
+}
+
+.entryFeild {
+  width: 460px;
+  height: 62px;
+  margin-bottom: 10px;
+}
+
+.add {
+  margin: 0 auto;
+  width: 60px;
+  background-color: green;
+}
+

@@ -1,0 +1,11 @@
+.message {
+  width: 90px;
+  margin-bottom: 5px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.message:nth-child(2n) {
+  margin-left: auto;
+}
