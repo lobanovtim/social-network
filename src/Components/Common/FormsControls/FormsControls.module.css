@@ -5,3 +5,8 @@
 .errorMessage {
     color: red;
 }
+
+.formError {
+    border-color: red;
+    color: red;
+}

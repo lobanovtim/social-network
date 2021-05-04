@@ -17,7 +17,13 @@ const Header = (props) => {
       </svg>
       <p>App name</p>
       <div className={s.loginBlock}>
-        {props.isAuth ? props.login : <NavLink to="/login">Login</NavLink>}
+        {props.isAuth
+          ? <div>
+              <p>{props.login}</p>
+              <button onClick={props.logout}>Log uot</button>
+            </div>
+        : <NavLink to="/login">Login</NavLink>
+        }
       </div>
     </header>
   );
