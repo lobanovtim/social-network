@@ -1,7 +1,8 @@
 import Preloader from "../../Common/Preloader/Preloader";
 import s from "./ProfileInfo.module.css";
 import userPhoto from "./../../../assets/images/userPhoto.png";
-import ProfileStatus from "./ProfileStatus"
+// import ProfileStatus from "./ProfileStatus"
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
@@ -35,7 +36,7 @@ const ProfileInfo = (props) => {
       {/* <p>{props.profile.aboutMe != null ?  props.profile.aboutMe : 'no status yet' }</p> */}
       <p>{props.profile.fullName != null ? props.profile.fullName : 'no nickname'}</p>
       {/* <>{showContacts()}</> */}
-      <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+      <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
     </div>
   );
 };
