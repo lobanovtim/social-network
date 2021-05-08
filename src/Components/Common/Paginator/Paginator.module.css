@@ -1,0 +1,20 @@
+.paginationList span {
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.paginationList span:hover {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.paginationList_item {
+  font-size: 0.8em;
+}
+
+.selectedPage {
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding-right: 5px;
+}

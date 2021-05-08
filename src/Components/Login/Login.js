@@ -7,9 +7,9 @@ import s from "./Login.module.css";
 import style from "./../Common/FormsControls/FormsControls.module.css";
 import { Redirect } from "react-router";
 
-const LoginForm = (props) => {
+const LoginForm = ({ handleSubmit, error }) => {
   return (
-    <form className={s.form} onSubmit={props.handleSubmit}>
+    <form className={s.form} onSubmit={handleSubmit}>
       <Field
         className={s.form__input}
         placeholder={"email"}
@@ -36,7 +36,7 @@ const LoginForm = (props) => {
       />
       remember me
       <button className={s.form__button}>Log in</button>
-      {props.error && <p className={style.formError}>{props.error}</p>}
+      {error && <p className={style.formError}>{error}</p>}
     </form>
   );
 };
