@@ -6,6 +6,8 @@ const Profile = (props) => {
   return (
     <main className={s.main__content}>
       <ProfileInfo
+        savePhoto={props.savePhoto}
+        isOwner={props.isOwner}
         profile={props.profile}
         status={props.status}
         updateStatus={props.updateStatus}

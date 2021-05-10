@@ -3,10 +3,16 @@ import s from "./ProfileInfo.module.css";
 import userPhoto from "./../../../assets/images/userPhoto.png";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
-const ProfileInfo = ({profile, status, updateStatus, ...props}) => {
+const ProfileInfo = ({ profile, status, updateStatus, isOwner, savePhoto }) => {
   if (!profile) {
     return <Preloader />;
   }
+
+  const onMainPhotoSelected = (e) => {
+    if (e.target.files.length) {
+      savePhoto(e.target.files[0]);
+    }
+  };
   return (
     <div className={s.main__content}>
       <img
@@ -15,6 +21,7 @@ const ProfileInfo = ({profile, status, updateStatus, ...props}) => {
         alt="User icon"
       />
       <p>{profile.fullName != null ? profile.fullName : "no nickname"}</p>
+      {isOwner && <input type={"file"} onChange={onMainPhotoSelected}/>}
       <ProfileStatusWithHooks status={status} updateStatus={updateStatus} />
     </div>
   );
